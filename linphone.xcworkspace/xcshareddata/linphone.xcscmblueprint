@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0D7533C70B3E77874DB4DC9E2131A9B1895C2C86",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0D7533C70B3E77874DB4DC9E2131A9B1895C2C86" : 0,
+    "B9A509D4F3D25560F565CB53A09A75E2140C5232" : 0,
+    "10265E242415D473A6A613214DB7AC3EE3D43F93" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "67CB275A-5F26-4213-A448-7BA8CB7269C6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0D7533C70B3E77874DB4DC9E2131A9B1895C2C86" : "linphone-iphone\/",
+    "B9A509D4F3D25560F565CB53A09A75E2140C5232" : "linphone-iphone\/submodules\/linphone\/",
+    "10265E242415D473A6A613214DB7AC3EE3D43F93" : "linphone-iphone\/Classes\/KIF\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "linphone",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "linphone.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dannycxh\/linphone-iphone.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0D7533C70B3E77874DB4DC9E2131A9B1895C2C86"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kif-framework\/KIF",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "10265E242415D473A6A613214DB7AC3EE3D43F93"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/git.linphone.org\/linphone",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B9A509D4F3D25560F565CB53A09A75E2140C5232"
+    }
+  ]
+}

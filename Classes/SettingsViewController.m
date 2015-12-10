@@ -514,6 +514,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 			NSMutableArray *titles = [NSMutableArray arrayWithArray:[dict objectForKey:@"Titles"]];
 			[titles removeObject:@"TLS"];
 			[dict setObject:titles forKey:@"Titles"];
+            
 			NSMutableArray *values = [NSMutableArray arrayWithArray:[dict objectForKey:@"Values"]];
 			[values removeObject:@"tls"];
 			[dict setObject:values forKey:@"Values"];

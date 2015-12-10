@@ -5,6 +5,67 @@
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
+
+
+#import <AdSupport/ASIdentifierManager.h>               //广告IDFA库
+#import <CoreTelephony/CTCarrier.h>                     //运营商信息
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>        //运营商信息
+#import <CommonCrypto/CommonCrypto.h>
+#import "Reachability.h"                                //测试网络连接
+#import "AFNetworking.h"                                //HTTP POST GET功能模块
+#import <HTMLReader/HTMLReader.h>                       //解释HTML
+#import <SBJson4.h>                                     //JSON处理
+#import "Appirater.h"                                   //提醒用户来投票
+#import <POP.h>
+#import "FBTweak.h"
+#import "FBTweakShakeWindow.h"
+#import "FBTweakInline.h"
+#import "FBTweakViewController.h"
+#import <ZendeskSDK/ZendeskSDK.h>                       //ZenDesk的SDK
+#import "TOWebViewController.h"                         //3rd webview效果
+
+
+//同一个公司发行的的app在相同的设备上运行的时候都会有这个相同的标识符 (PS:: 然而，如果用户删除了这个供应商的app然后再重新安装的话，这个标识符就会不一致)
+#define IOS_DEVICE_VENDOR_UUID ([[UIDevice currentDevice].identifierForVendor UUIDString])
+//返回给在这个设备上所有软件供应商相同的 一个值，所以只能在广告的时候使用。这个值会因为很多情况而有所变化，比如说用户初始化设备的时候便会改变。
+#define IOS_DEVICE_IDFA ([[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString])
+#define IOS_VERSION     [[UIDevice currentDevice] systemVersion]
+//判断是否为iPhone
+#define IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+//判断是否为iPad
+#define IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+//判断是否为ipod
+#define IPOD ([[[UIDevice currentDevice] model] isEqualToString:@"iPod touch"])
+#define SIMULATOR TARGET_IPHONE_SIMULATOR
+//获取手机当前的网络信息配置
+#define NETWORK_DICTIONARY (__bridge NSDictionary *)(CFNetworkCopySystemProxySettings())
+//获取手机的运行商
+#define DEVICE_CARRIER     ([[[[CTTelephonyNetworkInfo alloc] init] subscriberCellularProvider] carrierName])
+//获取设备的语言
+#define DEVICE_LANGUAGE    ([[NSLocale preferredLanguages] objectAtIndex:0])
+#define ARRAY_SIZE(a)      sizeof(a)/sizeof(a[0])
+//----------------------屏幕类---------------------------
+#define SCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+//----------------------颜色类---------------------------
+// rgb颜色转换（16进制->10进制）
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+//----------------------本地化---------------------------
+#define MMString(key, comment)  ([[NSBundle bundleWithPath:[[NSBundle mainBundle]  \
+pathForResource:@"en" ofType:@"lproj"]] \
+localizedStringForKey:key value:@"" table:nil])
+
+
+#define DEBUG_MODE 1
+#ifdef DEBUG_MODE
+#define MLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define MLog( s, ... )
+#endif
+
+
 #endif
 
 #ifdef __IPHONE_8_0

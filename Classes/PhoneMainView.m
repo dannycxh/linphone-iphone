@@ -165,6 +165,8 @@ static RootViewManager *rootViewManagerInstance = nil;
 	volumeView.userInteractionEnabled = false;
 
 	[self.view addSubview:mainViewController.view];
+    
+    MLog(@"HELLO WORLD");
 }
 
 - (void)viewWillAppear:(BOOL)animated {

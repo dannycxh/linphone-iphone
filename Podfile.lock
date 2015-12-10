@@ -1,0 +1,79 @@
+PODS:
+  - AdColony (2.6.0)
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Appirater (2.0.5)
+  - AppsFlyer-SDK (3.3.3)
+  - Flurry-iOS-SDK (7.1.1):
+    - Flurry-iOS-SDK/FlurrySDK (= 7.1.1)
+  - Flurry-iOS-SDK/FlurrySDK (7.1.1)
+  - GoogleAnalytics (3.13.0)
+  - HTMLReader (0.9.3)
+  - pop (1.0.8)
+  - Reachability (3.2)
+  - SBJson4 (4.0.2)
+  - SupersonicSDK (6.3.2.0)
+  - TOWebViewController (2.0.19)
+  - Tweaks (2.0.0)
+  - VungleAdvertiserSDK (3.1.2)
+  - ZendeskSDK (1.4.1.4):
+    - ZendeskSDK/Core (= 1.4.1.4)
+    - ZendeskSDK/Localization (= 1.4.1.4)
+  - ZendeskSDK/Core (1.4.1.4)
+  - ZendeskSDK/Localization (1.4.1.4):
+    - ZendeskSDK/Core
+
+DEPENDENCIES:
+  - AdColony (~> 2.6.0)
+  - AFNetworking (~> 2.5.4)
+  - Appirater (~> 2.0.5)
+  - AppsFlyer-SDK (~> 3.3.0)
+  - Flurry-iOS-SDK (~> 7.1.1)
+  - GoogleAnalytics (~> 3.13.0)
+  - HTMLReader (~> 0.9)
+  - pop (~> 1.0.4)
+  - Reachability (~> 3.2)
+  - SBJson4 (~> 4.0.2)
+  - SupersonicSDK (~> 6.3.2.0)
+  - TOWebViewController (~> 2.0.19)
+  - Tweaks (~> 2.0.0)
+  - VungleAdvertiserSDK (~> 3.1.2)
+  - ZendeskSDK (~> 1.4.1.4)
+
+SPEC CHECKSUMS:
+  AdColony: ab47c3e22be7843e08f90989381a222884be4a62
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  Appirater: e7c0a47fb67ee5041ce8479e6ba960927fb40264
+  AppsFlyer-SDK: 559a997f52025a5ecc5faa4606d06e8bb652fc01
+  Flurry-iOS-SDK: 83fd4f40ae66e80d122fd2f6698f0e0c31021a63
+  GoogleAnalytics: fcf1f1cad57ae1a9a53520018f0f680ceeeb8b49
+  HTMLReader: 01de6ebb3b5f0f9dc4f6f165fdac0a15b3648167
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SBJson4: b64afe0d4607e9e339b6d7538b04611e756f71db
+  SupersonicSDK: 0e7f42fbccc658cb02cc36c0834cf169726752f9
+  TOWebViewController: accd62ec0acc8d5c2e1e195c6f7ff7654c3c840c
+  Tweaks: 524fa47636cce3bf3a4d9156e980f10ae9480e81
+  VungleAdvertiserSDK: 31f17fea4935d0879eedfd7cebbeecb411f8a879
+  ZendeskSDK: e5c768ff0f8fa24cb8e48e5574c4dc2ae9b61abf
+
+COCOAPODS: 0.39.0
